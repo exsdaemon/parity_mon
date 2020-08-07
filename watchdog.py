@@ -41,7 +41,7 @@ if __name__ == '__main__':
     # service = sysbus.get_object('org.freedesktop.systemd1', object_path=manager.GetUnit('EthereumRun.service'))
     logfile = None
     try:
-        logfile = open('parity.log')
+        logfile = open('/parity.log')
     except (FileNotFoundError, PermissionError) as err:
         exit("Error: Can't read logfile (%s)" % (err))
     #
